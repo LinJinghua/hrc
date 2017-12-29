@@ -1,6 +1,6 @@
 # 消息驱动编程
 
-> HTTP Reactive Client 是一个典型的消息（事件）驱动的案例。[^pmlpml]
+> HTTP Reactive Client 是一个典型的消息（事件）驱动的案例。[^pmlpmlblog]
 
 
 ----------
@@ -86,6 +86,7 @@
 
 
 ----------
+
 ### 附录
 测试说明：
 ```
@@ -96,8 +97,10 @@
 > cli -m async
 ```
 
+----------
 
-[^pmlpml]:[理解 goroutine 的并发](http://blog.csdn.net/pmlpml/article/details/78850661#t6)
+
+[^pmlpmlblog]:[理解 goroutine 的并发](http://blog.csdn.net/pmlpml/article/details/78850661#t6)
 
 [^synchronousway]:[Time consumed to create a response for the client – synchronous way](https://jersey.github.io/documentation/latest/rx-client.html#d0e5556)
 
