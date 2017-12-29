@@ -51,7 +51,7 @@
 结果：
 ```
 > cli -m async
-[Async Service] |   Start  | 2017-12-29 20:44:52.1076029 +0800 CST m=+0.003000100
+[Async Service] |   Start  | 2017-12-29 21:09:18.103084132 +0800 +08 m=+0.001677987
 {
   "customers": "8675309",
   "duration": "150.8119ms"
@@ -74,12 +74,12 @@
   "duration": "332.0998ms"
 }
 
-[Async Service] |  Finish  | 2017-12-29 20:44:52.9200283 +0800 CST m=+0.815425500
-[Async Service] | Duration | 780.8646ms
+[Async Service] |  Finish  | 2017-12-29 21:09:18.843827823 +0800 +08 m=+0.742421694
+[Async Service] | Duration | 740.758048ms
 ```
 
 ## go 异步 REST 服务协作的优势
-从上两节结果可见：完成同样的任务，同步方法使用了约5.4秒，而异步REST服务协作只用了约0.78秒。异步REST服务协作的优势不言而喻：高效利用CPU资源，更快完成任务。
+从上两节结果可见：完成同样的任务，同步方法使用了约5.4秒，而异步REST服务协作只用了约0.74秒。异步REST服务协作的优势不言而喻：高效利用CPU资源，更快完成任务。
 
 ## 一般性的解决方案
 利用 Channel 搭建基于消息的异步机制。
@@ -89,10 +89,9 @@
 ### 附录
 测试说明：
 ```
-> go get https://github.com/LinJinghua/hrc
-> go install github.com/LinJinghua/hrc
+> go get github.com/LinJinghua/hrc
+> go install github.com/LinJinghua/hrc && hrc&
 > go install github.com/LinJinghua/hrc/cli
-> hrc&
 > cli -m sync
 > cli -m async
 ```
